@@ -1,5 +1,5 @@
 [alias]
-  # Basics
+  # Basic
   ps = push
   pl = pull
   cm = commit
