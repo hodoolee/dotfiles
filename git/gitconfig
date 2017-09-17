@@ -1,12 +1,12 @@
 [alias]
   # Basics
-	push = ps
-	pull = pl
-	commit = c
-	status = s
-	log = l
-	branch = b
-	checkout = co
+  push = ps
+  pull = pl
+  commit = c
+  status = s
+  log = l
+  branch = b
+  checkout = co
   # Show verbose output about tags, branches or remotes
   tags = tag -l
   branches = branch -a
