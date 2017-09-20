@@ -1,4 +1,18 @@
 [alias]
+  # View the current working tree status using the short format
+  s = status -s
+  
+  # View abbreviated SHA, description, and history graph of the latest 20 commits
+  l = log --pretty=oneline -n 20 --graph --abbrev-commit
+  
+  # Show verbose output about tags, branches or remotes
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+  
+  # Pretty log output
+  hist = log --graph --pretty=format:'%Cred%h%Creset %s%C(yellow)%d%Creset %Cgreen(%cr)%Creset [%an]' --abbrev-commit --date=relative
+  
   # Basic
   ps = push
   pl = pull
@@ -8,12 +22,6 @@
   br = branch
   co = checkout
   a = add
-  # Show verbose output about tags, branches or remotes
-  tags = tag -l
-  branches = branch -a
-  remotes = remote -v
-  # Pretty log output
-  hist = log --graph --pretty=format:'%Cred%h%Creset %s%C(yellow)%d%Creset %Cgreen(%cr)%Creset [%an]' --abbrev-commit --date=relative
 [color]
   # Use colors in Git commands that are capable of colored output when outputting to the terminal
   ui = auto
